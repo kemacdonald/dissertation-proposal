@@ -1,0 +1,329 @@
+\documentclass[]{elsarticle} %review=doublespace preprint=single 5p=2 column
+%%% Begin My package additions %%%%%%%%%%%%%%%%%%%
+\usepackage[hyphens]{url}
+\usepackage{lineno} % add
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\bibliographystyle{elsarticle-harv}
+\biboptions{sort&compress} % For natbib
+\usepackage{graphicx}
+\usepackage{booktabs} % book-quality tables
+%% Redefines the elsarticle footer
+%\makeatletter
+%\def\ps@pprintTitle{%
+% \let\@oddhead\@empty
+% \let\@evenhead\@empty
+% \def\@oddfoot{\it \hfill\today}%
+% \let\@evenfoot\@oddfoot}
+%\makeatother
+
+% A modified page layout
+\textwidth 6.75in
+\oddsidemargin -0.15in
+\evensidemargin -0.15in
+\textheight 9in
+\topmargin -0.5in
+%%%%%%%%%%%%%%%% end my additions to header
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \usepackage{fontspec}
+  \ifxetex
+    \usepackage{xltxtra,xunicode}
+  \fi
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \newcommand{\euro}{€}
+\fi
+% use microtype if available
+\IfFileExists{microtype.sty}{\usepackage{microtype}}{}
+\ifxetex
+  \usepackage[setpagesize=false, % page size defined by xetex
+              unicode=false, % unicode breaks when used with xetex
+              xetex]{hyperref}
+\else
+  \usepackage[unicode=true]{hyperref}
+\fi
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={},
+            pdftitle={Social contexts shape information gathering, attention, and memory during familiar language comprehension and novel word learning},
+            colorlinks=true,
+            urlcolor=blue,
+            linkcolor=magenta,
+            pdfborder={0 0 0}}
+\urlstyle{same}  % don't use monospace font for urls
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\setcounter{secnumdepth}{0}
+% Pandoc toggle for numbering sections (defaults to be off)
+\setcounter{secnumdepth}{0}
+% Pandoc header
+
+
+\usepackage[nomarkers]{endfloat}
+
+\begin{document}
+\begin{frontmatter}
+
+  \title{Social contexts shape information gathering, attention, and memory
+during familiar language comprehension and novel word learning}
+    
+  \begin{abstract}
+  
+  \end{abstract}
+  
+ \end{frontmatter}
+
+\section{Dissertation overview}\label{background}
+
+Learning a first language should be hard. Consider that even concrete
+nouns are often used in complex contexts with multiple possible
+referents, which in turn have many conceptually natural properties that
+a speaker could talk about. This ambiguity creates the potential for an
+(in principle) unlimited amount of referential uncertainty in the
+learning task.\footnote{This problem is a simplified version of Quine's
+  \textit{indeterminacy of reference} (Quine 1960): That there are many
+  possible meanings for a word (``Gavigai'') that include the referent
+  (``Rabbit'') in their extension, e.g., ``white,'' ``rabbit,''
+  ``dinner.'' Quine's broader philosophical point was that different
+  meanings (``rabbit'' and ``undetached rabbit parts'') could actually
+  be extensionally identical and thus impossible to tease apart.}.
+Moreover, finding meaning in language requires rapdily establishing
+reference during real-time interaction where the incoming information is
+dynamic, multimodal, and transient. Remarkably, word learning proceeds
+despite this uncertainty, with estimates of adult vocabularies ranging
+between 50,000 to 100,000 distinct lexical concepts (P. Bloom 2002). How
+do learners infer and retain such a large variety of word meanings from
+data with this kind of ambiguity?
+
+Social-pragmatic theories of language acquisition emphasize the
+importance of the social context for word learning (P. Bloom 2002; Clark
+2009; Hollich et al. 2000). Experimental work has shown that even
+children as young as 16 months prefer to map novel words to objects that
+are the target of a speaker's gaze and not their own (Baldwin 1993). In
+an analysis of naturalistic parent-child labeling events, Yu and Smith
+(2012) found that young learners tended to retain labels that were
+accompanied by clear referential cues, which served to make a single
+object dominant in the visual field. And correlational studies have
+demonstrated strong links between early intention-reading skills (e.g.,
+gaze following) and later vocabulary growth (Brooks and Meltzoff 2005;
+Brooks and Meltzoff 2008; Carpenter et al. 1998). Moreover, studies
+outside the domain of language acquisition have shown that the presence
+of social cues: (a) produce better spatial learning of audiovisual
+events (Wu et al. 2011), (b) boost recognition of a cued object
+(Cleveland, Schug, and Striano 2007), and (c) lead to preferential
+encoding of an object's featural information (Yoon, Johnson, and Csibra
+2008).
+
+Together, the evidence suggests that social information shapes the basic
+information gathering processes that support word learning. My
+dissertation work directly tests this information-seeking proposal. To
+do this, I decompose the word learning problem into two components
+(Frank, Lewis, and MacDonald 2016):
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  language comprehension
+\item
+  disambiguation of reference
+\end{enumerate}
+
+In our previous work, we explored how children and adults gather visual
+information from a social patner to faciliate rapid language
+comprehension in American Sign Language (\protect\hyperlink{ch1}{Chapter
+1}). and spoken language (\href{ch2}{Chapter 2}). Then I provide
+evidence that social information modulates the representations
+underlying cross-situational word learning (Chapter 3). Here, I propose
+a study that will connect these two lines of research by testing
+predictions of our information seeking account in novel word learning
+contexts. The goal is to connect these two lines of research and
+increase our understanding of how micro-processes that occur
+in-the-moment of learning adapt to the value of seeking different kinds
+of information in the social leanring context.
+
+\section{Background literature}\label{background-literature}
+
+The study of eye movements during language comprehension has provided
+fundamental insights into the interaction between conceptual
+representations of the world and the incoming linguistic signal. For
+example, research shows that adults and children will rapidly shift
+visual attention upon hearing the name of an object in the visual scene,
+with a high proportion of shifts occurring prior to the offset of the
+word (Allopenna, Magnuson, and Tanenhaus 1998; Tanenhaus et al. 1995).
+Moreover, researchers have found that conceptual representations
+activated by fixations to the visual world can modulate subsequent eye
+movements during language processing (Altmann and Kamide 2007).
+
+The majority of this work has used eye movements as a measure of the
+output of the underlying language comprehension process, often using
+linguistic stimuli that come from a disembodied voice. But in real world
+contexts, people also gather information about the linguistic signal by
+fixating on the language source. Consider a speaker who asks you to
+``Pass the salt'' but you are in a noisy room, making it difficult to
+understand the request. Here, comprehension can be facilitated by
+gathering information via (a) fixations to the nonlinguistic visual
+world (i.e., encoding the objects that are present in the scene) or (b)
+fixations to the speaker (i.e., reading lips or perhaps the direction of
+gaze).
+
+But, this situation creates a tradeoff where the listener must decide
+what kind of information to gather and at what time. How do we decide
+where to look? We propose that people modulate their eye movements
+during language comprehension in response to tradeoffs in the value of
+gathering different kinds of information.
+
+We test this adaptive tradeoff account using two case studies that
+manipulate the value of different fixation locations for language
+understanding: a) a comparison of processing sign vs.~spoken language in
+children (E1), and b) a comparison of processing printed text vs.~spoken
+language in adults (E2). Our key prediction is that competition for
+visual attention will make gaze shifts away from the language source
+less valuable than fixating the source of the linguistic signal, leading
+people to generate fewer exploratory, nonlanguage-driven eye movements.
+
+\section{Completed work}\label{completed-work}
+
+\hypertarget{ch1}{\subsection{Chapter 1: Using eye movements to gather
+information during real-time procesing of American Sign
+Language}\label{ch1}}
+
+\begin{center}\includegraphics[width=0.7\linewidth]{figs/unnamed-chunk-1-1} \end{center}
+
+\begin{center}\includegraphics[width=0.7\linewidth]{figs/unnamed-chunk-2-1} \end{center}
+
+\begin{center}\includegraphics[width=0.7\linewidth]{figs/unnamed-chunk-3-1} \end{center}
+
+\begin{center}\includegraphics[width=0.7\linewidth]{figs/unnamed-chunk-4-1} \end{center}
+
+\subsection{Chapter 2: An information seeking account of eye movements
+in spoken and signed language comprehension}\label{ch2}
+
+\begin{center}\includegraphics[width=0.7\linewidth]{figs/unnamed-chunk-5-1} \end{center}
+
+\begin{center}\includegraphics[width=0.7\linewidth]{figs/unnamed-chunk-6-1} \end{center}
+
+\subsection{Chapter 3: Social information modulates attention and memory
+during word learning}\label{ch3}
+
+\begin{center}\includegraphics[width=0.7\linewidth]{figs/unnamed-chunk-7-1} \end{center}
+
+\begin{center}\includegraphics[width=0.7\linewidth]{figs/unnamed-chunk-8-1} \end{center}
+
+\begin{center}\includegraphics[width=0.7\linewidth]{figs/unnamed-chunk-9-1} \end{center}
+
+\begin{center}\includegraphics[width=0.7\linewidth]{figs/unnamed-chunk-10-1} \end{center}
+
+\begin{center}\includegraphics[width=0.7\linewidth]{figs/unnamed-chunk-11-1} \end{center}
+
+\section{Proposed work}\label{proposal}
+
+\subsection{Eye movements for information seeking during novel word
+learning}\label{eye-movements-for-information-seeking-during-novel-word-learning}
+
+\section{References}\label{references}
+
+\setlength{\parindent}{-0.3in} \setlength{\leftskip}{0.3in} \noindent
+
+\hypertarget{refs}{}
+\hypertarget{ref-allopenna1998tracking}{}
+Allopenna, Paul D, James S Magnuson, and Michael K Tanenhaus. 1998.
+``Tracking the Time Course of Spoken Word Recognition Using Eye
+Movements: Evidence for Continuous Mapping Models.'' \emph{Journal of
+Memory and Language} 38 (4). Elsevier: 419--39.
+
+\hypertarget{ref-altmann2007real}{}
+Altmann, Gerry, and Yuki Kamide. 2007. ``The Real-Time Mediation of
+Visual Attention by Language and World Knowledge: Linking Anticipatory
+(and Other) Eye Movements to Linguistic Processing.'' \emph{Journal of
+Memory and Language} 57 (4). Elsevier: 502--18.
+
+\hypertarget{ref-baldwin1993infants}{}
+Baldwin, Dare A. 1993. ``Infants' Ability to Consult the Speaker for
+Clues to Word Reference.'' \emph{Journal of Child Language} 20 (02).
+Cambridge Univ Press: 395--418.
+
+\hypertarget{ref-bloom2002children}{}
+Bloom, Paul. 2002. \emph{How Children Learn the Meaning of Words}. The
+MIT Press.
+
+\hypertarget{ref-brooks2005development}{}
+Brooks, Rechele, and Andrew N Meltzoff. 2005. ``The Development of Gaze
+Following and Its Relation to Language.'' \emph{Developmental Science} 8
+(6). Wiley Online Library: 535--43.
+
+\hypertarget{ref-brooks2008infant}{}
+---------. 2008. ``Infant Gaze Following and Pointing Predict
+Accelerated Vocabulary Growth Through Two Years of Age: A Longitudinal,
+Growth Curve Modeling Study.'' \emph{Journal of Child Language} 35 (01).
+Cambridge Univ Press: 207--20.
+
+\hypertarget{ref-carpenter1998social}{}
+Carpenter, Malinda, Katherine Nagell, Michael Tomasello, George
+Butterworth, and Chris Moore. 1998. ``Social Cognition, Joint Attention,
+and Communicative Competence from 9 to 15 Months of Age.''
+\emph{Monographs of the Society for Research in Child Development}.
+JSTOR, i--174.
+
+\hypertarget{ref-clark2009first}{}
+Clark, Eve V. 2009. \emph{First Language Acquisition}. Cambridge
+University Press.
+
+\hypertarget{ref-cleveland2007joint}{}
+Cleveland, Allison, Mariah Schug, and Tricia Striano. 2007. ``Joint
+Attention and Object Learning in 5-and 7-Month-Old Infants.''
+\emph{Infant and Child Development} 16 (3). Wiley Online Library:
+295--306.
+
+\hypertarget{ref-frank2016performance}{}
+Frank, M, M Lewis, and Kyle MacDonald. 2016. ``A Performance Model for
+Early Word Learning.'' In \emph{Proceedings of the 38th Annual
+Conference of the Cognitive Science Society}.
+
+\hypertarget{ref-hollich2000breaking}{}
+Hollich, George J, Kathy Hirsh-Pasek, Roberta Michnick Golinkoff,
+Rebecca J Brand, Ellie Brown, He Len Chung, Elizabeth Hennon, Camille
+Rocroi, and Lois Bloom. 2000. ``Breaking the Language Barrier: An
+Emergentist Coalition Model for the Origins of Word Learning.''
+\emph{Monographs of the Society for Research in Child Development}.
+JSTOR, i--135.
+
+\hypertarget{ref-quine19600}{}
+Quine, Willard V. 1960. ``0. Word and Object.'' \emph{111e MIT Press}.
+
+\hypertarget{ref-tanenhaus1995integration}{}
+Tanenhaus, Michael K, Michael J Spivey-Knowlton, Kathleen M Eberhard,
+and Julie C Sedivy. 1995. ``Integration of Visual and Linguistic
+Information in Spoken Language Comprehension.'' \emph{Science} 268
+(5217). The American Association for the Advancement of Science: 1632.
+
+\hypertarget{ref-wu2011infants}{}
+Wu, Rachel, Alison Gopnik, Daniel C Richardson, and Natasha Z Kirkham.
+2011. ``Infants Learn About Objects from Statistics and People.''
+\emph{Developmental Psychology} 47 (5). American Psychological
+Association: 1220.
+
+\hypertarget{ref-yoon2008communication}{}
+Yoon, Jennifer MD, Mark H Johnson, and Gergely Csibra. 2008.
+``Communication-Induced Memory Biases in Preverbal Infants.''
+\emph{Proceedings of the National Academy of Sciences} 105 (36).
+National Acad Sciences: 13690--5.
+
+\hypertarget{ref-yu2012embodied}{}
+Yu, Chen, and Linda B Smith. 2012. ``Embodied Attention and Word
+Learning by Toddlers.'' \emph{Cognition}. Elsevier.
+
+\end{document}
+
+
