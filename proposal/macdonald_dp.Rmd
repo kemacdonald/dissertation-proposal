@@ -80,6 +80,10 @@ readPNG("../prior_work/figs_png/soc_xsit.png") %>% grid.raster()
 
 # Proposed work {#proposal}
 
+The goal of the proposed work is to understand the factors that influence eye movements for information gathering during novel word learning. 
+
+test predictions of our information seeking account generalizes to contexts where there is uncertainty over word-object links.
+
 Here are the factors that we could manipulate:
 
   * noise in the auditory signal (quality of the linguistic information)
@@ -88,11 +92,10 @@ Here are the factors that we could manipulate:
   * presence of gaze cue (referential ambiguity)
   * proportion of familiar vs. novel objects in the learning 
   * number of exposures (or pre-exposures) to word-object pairing 
-  * 
 
 ## Eye movements for information seeking during novel word learning
 
-The goal is to test how our information seeking account generalizes to contexts where there is uncertainty over word-object links. The word learning context is interesting because people are trying to make progress towards multiple goals: comprehending speech in the moment (a function of listening and looking to the speaker), mapping the new word to an object, and learning that mapping over time. Eye movements during concept formation can gather information about the speaker or about the nonlinguistic visual world. How do we explain where children look as they acquire more information in-the-moment of language comprehension and as they build a learning history about the correct word-object mapping?  This question can be formalized as a sequential decision making problem where children make fixation choice based on (1) their knowledge of the target concept, (2) the value of fixating a speaker for linguistic processing, and (3) the cost of each eye movement. 
+The goal is to test how our information seeking account generalizes to contexts where there is uncertainty over word-object links. The word learning context is interesting because people are trying to achieve towards multiple goals: comprehending speech in the moment (a function of listening and looking to the speaker), mapping the new word to an object, and learning that mapping over time. Eye movements during concept formation can gather information about the speaker or about the nonlinguistic visual world. How do we explain where children look as they acquire more information in-the-moment of language comprehension and as they build a learning history about the correct word-object mapping?  This question can be formalized as a sequential decision making problem where children make fixation choice based on (1) their knowledge of the target concept, (2) the value of fixating a speaker for linguistic processing, and (3) the cost of each eye movement. 
 
 The intuitive idea is that people balance fixating a speaker and fixating objects to support concept learning. The question is whether models of Bayesian concept learning and Optimal Experiment Design (Neslon & Cottrell, 2007) provide a good explanation of children’s eye movements. How far can we get using a purely computational information seeking decision model? 
 
