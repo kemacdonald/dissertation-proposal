@@ -1,13 +1,12 @@
 kim and rehder (2009): how knowledge affects attention during category learning
 
-
 	- But, contra these accounts, in Experiment 2 a preference to fixate related versus neutral features began to emerge in the second block of training; by the end of training, learners were over twice as likely to fixate related features as compared to neutral ones.
 
-	- The desire to increase speed in addition to reducing error should lead to attention shifts in situations not involving prior knowledge, and in fact this has been found. For example, Rehder and Hoffman (2005a) found that learners first discovered a one-dimensional rule that distinguished two categories but then only restricted attention (eye movements) to that dimension several (error-free) trials later. Moreover, although this result and the present experiments show that attention can shift when		 learners are receiving only positive feedback, other studies have found shifts in the absence of any feedback whatsoever. For example, Blair et al. (2009a) found that learners continued to optimize attention even after a criterion of 24 correct trials was reached and feedback stopped altogether. Of course, attentional shifts in the absence of error pose problems for all category learning models that tie attentional learning to error-driven mechanisms (e.g., Kruschke, 1992).
+	- The desire to increase speed in addition to reducing error should lead to attention shifts in situations not involving prior knowledge, and in fact this has been found. For example, Rehder and Hoffman (2005a) found that learners first discovered a one-dimensional rule that distinguished two categories but then only restricted attention (eye movements) to that dimension several (error-free) trials later. Moreover, although this result and the present experiments show that attention can shift when	learners are receiving only positive feedback, other studies have found shifts in the absence of any feedback whatsoever. For example, Blair et al. (2009a) found that learners continued to optimize attention even after a criterion of 24 correct trials was reached and feedback stopped altogether. Of course, attentional shifts in the absence of error pose problems for all category learning models that tie attentional learning to error-driven mechanisms (e.g., Kruschke, 1992).
 
 	-  In our experiments as well, subjects began to favor related dimensions before their last error, suggesting that doing so helped them solve the learning problem. But attention shifts can also reflect learning that has already occurred, as when less valuable sources of information are bypassed in order to respond more rapidly.
 
-	- sing eyetracking we found that (a) knowledge indeed changes what features are attended, with knowledge-relevant features being fixated more often than irrelevant ones, (b) this effect was not due to an initial bias to attend relevant dimensions but rather emerged as a result of observing category members, and (c) this effect grew even after a learning criterion was reached, that is, in the absence of error feedback. 
+	- using eyetracking we found that (a) knowledge indeed changes what features are attended, with knowledge-relevant features being fixated more often than irrelevant ones, (b) this effect was not due to an initial bias to attend relevant dimensions but rather emerged as a result of observing category members, and (c) this effect grew even after a learning criterion was reached, that is, in the absence of error feedback. 
 
 
 Yu and Smith, 2016: social attention notes
@@ -23,13 +22,11 @@ Yu and Smith, 2016: social attention notes
 	sustatined attention = looks longer than 3 s
 
 	65.38% of SA instances occurred with an accompanying parent look and thus with JA, while the rest were without JA. 
+  
+The present findings may help unify these two senses of responsiveness and provide a mechanistic pathway through which long-term predictions from the quality of early interactions play out. In brief, parents who are more ‘‘tuned’’ to their children’s momentary in- terests, and who are ‘‘responsive,’’ may coordinate their visual attention with that of the infant and thereby entrain and train the child’s self-regulation of atten- tion, setting up a cascade of ‘‘down-the- road’’ effects. 
 
 
-
-	The present findings may help unify these two senses of responsiveness and provide a mechanistic pathway through which long-term predictions from the quality of early interactions play out. In brief, parents who are more ‘‘tuned’’ to their children’s momentary in- terests, and who are ‘‘responsive,’’ may coordinate their visual attention with that of the infant and thereby entrain and train the child’s self-regulation of atten- tion, setting up a cascade of ‘‘down-the- road’’ effects. 
-
-
-	goldstein social interaction and babbling
+goldstein social interaction and babbling
 
 	Does social contingency provide opportunities for vocal learning?
 

@@ -13,6 +13,7 @@ header-includes:
 knitr::opts_chunk$set(echo=F, warning=F, cache=T, message=F, sanitize=T,
                       out.width = "95%", fig.path='figs/',
                       fig.align = "center", fig.pos = "tb")
+library(here)
 library(knitr); library(xtable); library(png); library(grid)
 library(tidyverse)
 ```
@@ -47,7 +48,7 @@ Here, I propose a study that will connect our prior work on eye movements for in
 ## Chapter 1: Dividing visual attention to language and objects during real-time American Sign Language comprehension {#ch1}
 
 ```{r sol_stimuli, eval = F}
-readPNG("../prior_work/figs_png/sol_fig1_trial_info.png") %>% grid.raster()
+readPNG(here("prior_work/figs_png/sol_fig1_trial_info.png")) %>% grid.raster()
 ```
 
 When children interpret spoken language in real time, linguistic information drives rapid shifts in visual attention to objects in the visual world, which can provide insights into the development of efficiency in lexical access. But how does language influence visual attention when the linguistic signal and the visual world are both processed via the visual channel? We developed precise measures of eye movements during real-time comprehension of a visual-manual language, American Sign Language (ASL), by 29 native, monolingual ASL-learning children (16-53 mos, 16 deaf, 13 hearing) and 16 fluent deaf adult signers. All signers showed evidence of rapid, incremental language comprehension, initiating eye movements prior to sign offset.  Deaf and hearing ASL-learners showed remarkably similar gaze patterns, suggesting that the in-the-moment dynamics of eye movements during ASL processing are shaped by the constraints of processing a visual language in real time and not by differential access to auditory information in day-to-day life. Finally, variation in children’s ASL processing was positively correlated with age and vocabulary size. Thus, despite channel competition, allocation of visual attention during ASL comprehension reflects information processing skills that are fundamental for language acquisition regardless of language modality.
@@ -65,13 +66,13 @@ The majority of this work has used eye movements as a measure of the output of t
 We test this adaptive tradeoff account using two case studies that manipulate the value of different fixation locations for language understanding: a) a comparison of processing sign vs. spoken language in children (E1), and b) a comparison of processing printed text vs. spoken language in adults (E2). Our key prediction is that competition for visual attention will make gaze shifts away from the language source less valuable than fixating the source of the linguistic signal, leading people to generate fewer exploratory, nonlanguage-driven eye movements.
 
 ```{r speed_acc_trio_plot}
-readPNG("../prior_work/figs_png/speed_acc_trio.png") %>% grid.raster()
+readPNG(here("/prior_work/figs_png/speed_acc_trio.png")) %>% grid.raster()
 ```
 
 Some of our work has explored how the presence of another person changes the set of information seeking behaviors available [@macdonald2017info]. Inspired by theories of natural vision that characterize eye movements as an information seeking mechanism, we asked whether children and adults would allocate more visual attention to a speaker when the linguistic signal was noisy to support the goal of rapid language understanding. We used an eye-tracking task to measure participants' gaze patterns while they processed clear or degraded speech (speech with brown noise added). Both children and adults spent more time fixating on the speaker in the degraded speech context. Interestingly, children and adults were also more accurate in word recognition even though the speech was noisy and difficult to process. This result suggests that listeners were compensating for the uncertainty in the auditory channel by gathering visual information from the speaker. Critically, listeners would not have been able to gather this information if the speaker was not present (e.g., listening to a noisy recording) and in clear view.
 
 ```{r speed_acc_noise_plot, eval = F}
-readPNG("../prior_work/figs_png/speed_acc_noise.png") %>% grid.raster()
+readPNG(here("/prior_work/figs_png/speed_acc_noise.png")) %>% grid.raster()
 ```
 
 ## Chapter 3: Social cues to reference modulate attention and memory during cross-situaitonal word learning {#ch3}
@@ -103,11 +104,11 @@ Some of the features of the learning context that we could manipulate include:
 
 The goal is to test how our information seeking account generalizes to contexts where there is uncertainty over word-object links. The word learning context is interesting because people are trying to achieve towards multiple goals: comprehending speech in the moment (a function of listening and looking to the speaker), mapping the new word to an object, and learning that mapping over time. Eye movements during concept formation can gather information about the speaker or about the nonlinguistic visual world. How do we explain where children look as they acquire more information in-the-moment of language comprehension and as they build a learning history about the correct word-object mapping?  This question can be formalized as a sequential decision making problem where children make fixation choice based on (1) their knowledge of the target concept, (2) the value of fixating a speaker for linguistic processing, and (3) the cost of each eye movement. 
 
-The intuitive idea is that people balance fixating a speaker and fixating objects to support concept learning. The question is whether models of Bayesian concept learning and Optimal Experiment Design (Neslon & Cottrell, 2007) provide a good explanation of children’s eye movements. How far can we get using a purely computational information seeking decision model? 
+The intuition is that people balance fixating a speaker and fixating objects to support concept learning. The question is whether models of Bayesian concept learning and Optimal Experiment Design (Neslon & Cottrell, 2007) provide a good explanation of children’s eye movements. How far can we get using a purely computational information seeking decision model? 
 
 ### Pilot
 
-When gaze cued adults’ visual attention, they showed stronger memory for the word-object link compared to when a gaze cue was absent (Figure 2). Social information does more than modulate how people allocate their visual attention; instead, social contexts change strength of inferences
+When gaze cued adults’ visual attention, they showed stronger memory for the word-object link compared to when a gaze cue was absent (Figure 2). This result suggest that social information does more than modulate how people allocate their visual attention (more than a filter); instead, social cues change the strength of the inference.
 
 ```{r gaze_xsit_plot}
 readPNG("../prior_work/figs_png/gaze_xsit.png") %>% grid.raster()
