@@ -28,40 +28,19 @@ While all cross-situational learning models agree that the input is the co-occur
 
 Researchers also disagree about how to best characterize the ambiguity of the input to cross-situational learning mechanisms. One way to quantify the uncertainty in a naming event is to show adults video clips of caregiver-child interactions and measure their accuracy at guessing the meaning of an intended referent (Human Simulation Paradigm: HSP [Gillette, Gleitman, Gleitman, and Lederer, 1999]). Using the HSP, @medina2011words found that approximately 90% of learning episodes were ambiguous (< 33% accuracy) and only 7% were relatively unambiguous (> 50% accuracy). In contrast, @yurovsky2013statistical found a higher proportion of clear naming events, with approximately 30% being unambiguous (> 90% accuracy). Moreover, @cartmill2013quality showed that the proportion of unambiguous naming episodes varies across different parent-child dyads, with some parents rarely providing highly informative contexts and others’ doing so more often.
 
-Thus, representations in cross-situational word learning can appear distributional or discrete, and the input to statistical learning mechanisms can vary along a continuum from low to high ambiguity.
+Thus, representations in cross-situational word learning can appear distributional or discrete, and the input to statistical learning mechanisms can vary along a continuum from low to high ambiguity. Taken together, these alternatives highlight the need for a better understanding of how behaviors  in-the-moment language comprehension processes shape the long-term retention of word-object labels.  
 
+TODO: 
 
-
-Taken together, these alternatives highlight the need for a better understanding of how behaviors  in-the-moment language comprehension processes shape the long-term retention of word-object labels.  
-
-
-social-pragmatic theories of language acquisition have long emphasized the importance of the social context for first language acquisition [@bloom2002children; @clark2009first; @hollich2000breaking]. Moroever, experimental work has shown that even children as young as 16 months prefer to map novel words to objects that are the target of a speaker’s gaze and not their own [@baldwin1993infants]. In an analysis of naturalistic parent-child labeling events, @yu2012embodied found that young learners tended to retain labels that were accompanied by clear referential cues, which served to make a single object dominant in the visual field. And correlational studies have demonstrated links between early intention-reading skills (e.g., gaze following) and later vocabulary growth [@brooks2005development; @carpenter1998social].
-
-
-For example, could learners be sensitive to the ambiguity of the input and use this information to alter the type of word-object representations they store in memory? 
-
-
-
-
-
-In the current line of work, we investigated how the presence of referential cues in the social context might alter the ambiguity of the input to statistical word learning mechanisms.
-
-
-need to make the point that information-theoretic accounts (tested in the case study of familiar language comprehension) have something to say about learners' behavior during the labeling moment.
-
-the link between in-the-moment language comprehension and long-term retention of word-object labels.
-
-TODO: say more here -- this point is crucial to the need for my dissertation work. 
+  * say more here -- this point is crucial to the need for my dissertation work. need to bring in the idea of how decision-making within a social learning context can shape learning and subsequent decisions.
+  * Also need to make the point that information-theoretic accounts (tested in the case study of familiar language comprehension) have something to say about learners' behavior during the labeling moment.
 
 
 Moreover, researchers have only begun to understand these processes within spoken language learning for a narrow range of learning contexts. For example, the majority of prior work on language comprehension and cross-situational learning has used linguistic stimuli that come from a disembodied voice and a visual world that consists of concrete objects. As a result, we know much less about how learning unfolds in contexts that include a communicative partner who can modulate the ambiguity of the input to cross-situational learning mechanisms. 
 
 This gap is important to address since social-pragmatic theories of language acquisition have long emphasized the importance of the social context for first language acquisition [@bloom2002children; @clark2009first; @hollich2000breaking]. Moroever, experimental work has shown that even children as young as 16 months prefer to map novel words to objects that are the target of a speaker’s gaze and not their own [@baldwin1993infants]. In an analysis of naturalistic parent-child labeling events, @yu2012embodied found that young learners tended to retain labels that were accompanied by clear referential cues, which served to make a single object dominant in the visual field. And correlational studies have demonstrated links between early intention-reading skills (e.g., gaze following) and later vocabulary growth [@brooks2005development; @carpenter1998social].
 
-A second open question for models of early language acquisition is how do learners adapt their behaviors to seek 
-
-
-we know little about how eye movements adapt to contexts where fixating on another person supports language acquisition as in the case of children learning a signed language. This developmental context creates a tradeoff where young signers must decide whether to look at their social partner to gather information about language or to look at the nonlinguistic visual world to gather information about objects. This channel competition potentially complicaties the link between the in-the-moment processes of establishing reference and long-term rentention of object labels.
+A second open question for models of early language acquisition is how learners adapt their behaviors to seek information that supports their word learning. For example, we know little about how eye movements adapt to contexts where fixating on another person supports language acquisition as in the case of children learning a signed language. This developmental context creates a tradeoff where young signers must decide whether to look at their social partner to gather information about language or to look at the nonlinguistic visual world to gather information about objects. This channel competition potentially complicaties the link between the in-the-moment processes of establishing reference and long-term rentention of object labels.
 
 My dissertation work directly explores how familiar language comprehension and novel word learning adapts to a wider variety of learning contexts, including sign language, language accompanied by social cues to reference, and language produced in noisy auditory contexts. To do this, I argue that it is useful to deconstruct the concrete word learning task into three parts (see @frank2016performance or @mcmurray2012word) and ask how each sub-component adapts to different contexts:
 
@@ -120,22 +99,24 @@ readPNG("../prior_work/figs_png/soc_xsit.png") %>% grid.raster()
 
 # Proposed work {#proposal}
 
-The goal of the proposed work is to understand the factors that influence eye movements for information gathering during novel word learning. 
+The goal of the proposed work is to understand how children use the presence of social information to help solve the problem of mapping concrete nouns to their referents amidst referential uncertainty. We will test an information-theoretic account of eye movements within a context where the child has uncertainty over word-object links. Our hypothesis is that gathering visual information from a speaker becomes more useful when uncertainty over word meanings is high and the goal is to learn word-object links. As the learner builds stronger word-object links via repeated exposures to co-occurence information, we predict that the value of allocating fixations to the speaker should decrease while the value of looking to the objects should increase. 
 
-We will test the predictions of an information seeking account of eye movements within the novel word learning context where the child has uncertainty over word-object links. Our hypothesis is that gathering visual information from a speaker becomes more useful when uncertainty over word meanings is high and the goal is to learn. As the learner builds stronger word-object links via repeated exposure to co-occurence information, the value of allocating additional fixations to the speaker should decrease while the value of looking to the objects should increase. 
+## Balancing looks to people and to objects during word learning
 
-Some of the features of the learning context that we could manipulate include:
+This project aims to answer the following research questions:
 
-  * noise in the auditory signal (quality of the linguistic information)
-  * number of novel objects (attention demands)
-  * interval between exposure and test (memory demands)
-  * presence of gaze cue (referential ambiguity)
-  * proportion of familiar vs. novel objects in the learning 
-  * number of exposures (or pre-exposures) to word-object pairing 
+* How does access to social cues shape in-the-moment decisions about visual fixation? 
+* How do children balance looks to people and to objects over the course of learning a new concept? 
+* Do children use prior knowledge to select fixation behaviors that best support word learning? 
 
-## Eye movements for information seeking during novel word learning
+The word learning context is an interesting case because learners are working towards multiple goals: comprehending speech in the moment (a dynamic intergration of linguistic and visual signal with prior knowledge) and figuring out what the new word refers to in the visual scene. Thus, eye movements during concept formation can be used to gather visual information from the speaker (e.g., eye gaze or mouth movements) or about the nonlinguistic visual world (encoding objects). How do we explain where children look as they acquire more information in-the-moment of language comprehension and as they build a learning history about the correct word-object mapping?  This question can be formalized as a sequential decision making problem where children make fixation choice based on (1) their knowledge of the target concept, (2) the value of fixating a speaker for linguistic processing, and (3) the cost of each eye movement. 
 
-The goal is to test how our information seeking account generalizes to contexts where there is uncertainty over word-object links. The word learning context is interesting because people are trying to achieve towards multiple goals: comprehending speech in the moment (a function of listening and looking to the speaker), mapping the new word to an object, and learning that mapping over time. Eye movements during concept formation can gather information about the speaker or about the nonlinguistic visual world. How do we explain where children look as they acquire more information in-the-moment of language comprehension and as they build a learning history about the correct word-object mapping?  This question can be formalized as a sequential decision making problem where children make fixation choice based on (1) their knowledge of the target concept, (2) the value of fixating a speaker for linguistic processing, and (3) the cost of each eye movement. 
+Framing fixation behaviors as a goal-based decision-making problem allows us to connect to formal models of action selection developed to explain 
+
+A growing body of psychological research has used the OED framework as a metaphor for active learning. The idea is that when people make decisions, they engage in a similar process of evaluating the "usefulness" of different actions relative to their learning goals. And they select behaviors that maximize the potential for gaining information. A success of the OED account is that it can capture a wide range of information seeking behaviors, including verbal question asking [@ruggeri2015children], planning interventions in causal learning tasks [@cook2011science], and decisions about where to look during scene understanding [@najemnik2005optimal]. Figures 1 and 2 present schematic overviews of how OED principles could shape the learning process for two of these domains -- causal learning (Figure 1) and word learning (Figure 2).
+
+
+One compelling use case of OED metaphor as a model of human behavior comes from @nelson2005finding study of eye movements during novel concept learning. Their model combined Bayesian probabilistic learning, which represents current knowledge as a probability distribution over concepts, with an OED model that calculated the usefulness of different patterns of eye movements. Here, eye movements were modeled as a type of question-asking behavior that gathered visual information about the target concept. @nelson2005finding found that participants' eye movements aligned with predictions from the OED model. Specifically, participants changed the dynamics of eye movements depending on how well they learned the target concepts. Early in learning, when the concepts were unfamiliar, the model generated a broader, less efficient distribution of fixations to explore all candidate features that could be used to categorize the stimulus. However, after the model began to learn the target concepts, eye movement patterns shifted to become more efficient and focused on a single stimulus dimension to maximize accuracy. This shift from exploratory to efficient eye movements matched adult performance on the task, suggesting that people's behavior was sensible given the structure of the learning problem and the uncertainty in the context.
 
 The intuition is that people balance fixating a speaker and fixating objects to support concept learning. The question is whether models of Bayesian concept learning and Optimal Experiment Design (Neslon & Cottrell, 2007) provide a good explanation of children’s eye movements. How far can we get using a purely computational information seeking decision model? 
 
