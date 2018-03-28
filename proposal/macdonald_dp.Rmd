@@ -1,8 +1,10 @@
 ---
-title: Balancing looks to people and to objects during novel word learning
+title: Balancing looks to people and objects during word learning
 subtitle: Kyle MacDonald
 bibliography: dp_library.bib
-output: pdf_document
+output: 
+  bookdown::pdf_document2:
+    toc: true
 author: 'Committee: Virginia Marchman, Hyowon Gweon, Jay McClleland, & Michael C. Frank'
 header-includes:
   - \setlength{\parindent}{2em}
@@ -17,11 +19,15 @@ knitr::opts_chunk$set(echo=F, warning=F, cache=T, message=F, sanitize=T,
 library(here)
 library(knitr); library(xtable); library(png); library(grid)
 library(tidyverse)
+
+fig_read_path <- "prior_work/figs_png/"
 ```
+
+\newpage
 
 # Dissertation overview {#background}
 
-Learning words should be hard. Consider that even concrete nouns are often produced in complex contexts with multiple possible referents, which in turn have many conceptually natural properties that a speaker could talk about. This ambiguity creates the potential for an (in principle) unlimited amount of referential uncertainty in the learning task.^[This problem is a simplified version of Quine's \textit{indeterminacy of reference} [@quine19600]: That there are many possible meanings for a word ("Gavigai") that include the referent ("Rabbit") in their extension, e.g., "white," "rabbit," "dinner." Quine's broader philosophical point was that different meanings ("rabbit" and "undetached rabbit parts") could actually be extensionally identical and thus impossible to tease apart.]. Moreover, to find meaning in language requires rapdily establishing reference during real-time interaction where the incoming information is dynamic, multimodal, and transient. Remarkably, children's word learning proceeds despite these challenges, with estimates of adult vocabularies ranging between 50,000 to 100,000 distinct lexical concepts [@bloom2002children]. How do learners infer and retain such a large variety of word meanings from data with this kind of ambiguity?
+Learning a new word should be hard. Consider that even concrete nouns are often produced in complex contexts with multiple possible referents, which in turn have many conceptually natural properties that a speaker could talk about. This ambiguity creates the potential for an (in principle) unlimited amount of referential uncertainty in the learning task.^[This problem is a simplified version of Quine's \textit{indeterminacy of reference} [@quine19600]: That there are many possible meanings for a word ("Gavigai") that include the referent ("Rabbit") in their extension, e.g., "white," "rabbit," "dinner." Quine's broader philosophical point was that different meanings ("rabbit" and "undetached rabbit parts") could actually be extensionally identical and thus impossible to tease apart.]. Moreover, to find meaning in language requires rapdily establishing reference during real-time interaction where the incoming information is dynamic, multimodal, and transient. Remarkably, children's word learning proceeds despite these challenges, with estimates of adult vocabularies ranging between 50,000 to 100,000 distinct lexical concepts [@bloom2002children]. How do learners infer and retain such a large variety of word meanings from data with this kind of ambiguity?
 
 Statistical learning theories offer a solution to this problem by aggregating cross-situational statistics across labeling events to identify underlying word meanings [@yu2007rapid; @siskind1996computational]. Experimental work has shown that both adults and young infants can use word-object co-occurrence statistics to learn words from individually ambiguous naming events [@smith2008infants; @vouloumanos2008fine]. For example, @smith2008infants taught 12-month-olds three novel words simply by repeating consistent novel word-object pairings across 10 ambiguous exposure trials. Moreover, computational models suggest that cross-situational learning can scale up to learn adult-sized lexicons, even under conditions of considerable referential uncertainty [@smith2011cross].
 
@@ -39,71 +45,83 @@ My dissertation work takes a step towards address these two open questions. Spec
 
 In the next three sections, I briefly review the completed dissertation work before motivating the current study. The proposed study aims to connect our prior work on eye movements for information seeking during familiar language comprehension with work on cross-situational word learning. The study will measure how listeners flexibly adapt the dynamics of eye movements away from a language source as word learning unfolds across multiple labeling events. Overall, the results of the proposed study will aim to synthesize ideas from social-pragmatic theories of language acqusition with work on goal-based vision to increase our understanding of how decisions about visual fixation change as learners acquire a new word meaning over time.
 
-
 # Completed work {#prior}
 
-## Chapter 1: Eye movements during real-time American Sign Language comprehension {#ch1}
+## Eye movements during real-time American Sign Language comprehension {#ch1}
 
-```{r sol_stimuli, eval = F}
-readPNG(here("prior_work/figs_png/sol_fig1_trial_info.png")) %>% grid.raster()
+```{r sol-stimuli, fig.cap = "Configuration of visual stimuli (1A) and trial structure (1B) for one question type (sentence final wh-phrase) shown in the central video on the VLP task."}
+readPNG(here(fig_read_path, "sol_fig1_trial_info.png")) %>% grid.raster()
 ```
 
 ### Study overview
 
+When children interpret spoken language in real time, linguistic information drives rapid shifts in visual attention to objects in the visual world, which can provide insights into the processes underlying real-time language comprehension. But how does language influence visual attention when the linguistic signal and the visual world are both processed via the visual channel? In this work, we measured eye movements during real-time comprehension of a visual-manual language, American Sign Language (ASL), by 29 native ASL-learning children (16-53 mos, 16 deaf, 13 hearing) and 16 fluent deaf adult signers. All signers showed evidence of rapid, incremental language comprehension, tending to initiate an eye movement before sign offset. Deaf and hearing ASL-learners showed similar gaze patterns, suggesting that the in-the-moment dynamics of eye movements during ASL processing are shaped by the constraints of processing a visual language in real time and not by differential access to auditory information in day-to-day life. Finally, variation in children’s ASL processing was positively correlated with age and vocabulary size. 
 
-In our previous work, we characterized how children and adults choose to allocate visual attention between a social partner and objects during familiar American Sign Language (ASL) comprehension (Chapter 1). 
+```{r sol-plot, fig.cap = "The time course of looking behavior for ASL-proficient adults (2A) and young ASL- learners (2C). The curves show mean proportion looking to the signer (dark grey), the target image (black), and the distracter image (light grey). The grey shaded region marks the analysis window (600-2500 ms); error bars represent 95\\% CI computed by non-parametric bootstrap. The mean proportion of each target sign length processed prior to shifting visual attention away from the language source to a named object for adults (2B) and children (2D). The diamond indicates the mean estimate for all signs. The dashed vertical line corresponds to a median proportion of 1.0. A median of greater than 1.0 reflects response latencies that occur prior to the offset of the target sign; a median of less than or equal to 1.0 reflects response latencies that occur after target sign offset. Error bars represent 95\\% Highest Density Intervals."}
 
-When children interpret spoken language in real time, linguistic information drives rapid shifts in visual attention to objects in the visual world, which can provide insights into the development of efficiency in lexical access. But how does language influence visual attention when the linguistic signal and the visual world are both processed via the visual channel? We developed precise measures of eye movements during real-time comprehension of a visual-manual language, American Sign Language (ASL), by 29 native, monolingual ASL-learning children (16-53 mos, 16 deaf, 13 hearing) and 16 fluent deaf adult signers. All signers showed evidence of rapid, incremental language comprehension, initiating eye movements prior to sign offset. Deaf and hearing ASL-learners showed remarkably similar gaze patterns, suggesting that the in-the-moment dynamics of eye movements during ASL processing are shaped by the constraints of processing a visual language in real time and not by differential access to auditory information in day-to-day life. Finally, variation in children’s ASL processing was positively correlated with age and vocabulary size. Thus, despite channel competition, allocation of visual attention during ASL comprehension reflects information processing skills that are fundamental for language acquisition regardless of language modality.
+readPNG(here::here(fig_read_path, "sol_fig2_timecourse_all.png")) %>% grid.raster()
+```
+
+### Method
+
+The task was presented on a 27" monitor. On each trial, pictures of two familiar objects appeared on the screen, a target object corresponding to the target noun, and a distracter object (see Fig. \@ref(sol-stimuli)). All picture pairs were matched for visual salience based on prior studies with spoken language (Fernald et al., 2008). Between the two pictures was a central video of an adult female signing the name of one of the pictures. Participants saw 32 test trials with five filler trials (e.g. “YOU LIKE PICTURES? MORE WANT?”) interspersed to maintain children’s interest. Participants’ gaze patterns were video recorded and later coded frame-by-frame at 33-ms resolution by highly-trained coders blind to target side.
 
 ### Key takeaway
 
+This study shows that, despite competition for attention within a single modality, both children and adults rapidly shifted visual attention away from a social partner and towards objects prior to sign offset. This result suggests that there is aa robust link between processing an object label and seeking that object in the visual world. However, 
 
-```{r sol_plot}
-readPNG("../prior_work/figs_png/sol_fig2_timecourse_all.png") %>% grid.raster()
+## Comparing children's eye movements during real-time spoken and signed language processing: An information seeking account {#ch2}
+
+```{r speed-acc-trio-plot, fig.cap = "Timecourse looking and first shift Reaction Time (RT) and Accuracy results. Panel A shows the overall looking to the center, target, and distracter stimulus for each context. Panel B shows the distribution of RTs for each participant. Each point represents a participant's average RT. Color represents the processing context. Panel C shows the same information but for first shift accuracy."}
+readPNG(here::here(fig_read_path, "speed_acc_trio.png")) %>% grid.raster()
 ```
-
-
-## Chapter 2: Comparing eye movements during real-time spoken and signed language processing: An information seeking account {#ch2}
 
 ### Study overview
 
-The study of eye movements during language comprehension has provided fundamental insights into the interaction between conceptual representations of the world and the incoming linguistic signal. For example, research shows that adults and children will rapidly shift visual attention upon hearing the name of an object in the visual scene, with a high proportion of shifts occurring prior to the offset of the word [@allopenna1998tracking; @tanenhaus1995integration]. Moreover, researchers have found that conceptual representations activated by fixations to the visual world can modulate subsequent eye movements during language processing [@altmann2007real]. 
+Language comprehension in grounded, social contexts involves extracting meaning from the linguistic signal and mapping it to the surrounding world. But how should listeners prioritize integrating information from the linguistic and visual signals? In this work, we proposed that listeners flexibly adapt their gaze behaviors in response to features of the language processing context, seeking visual information from their social partners that supports language comprehension. We present evidence for our account using three case studies, sampled from a diverse set of language processing contexts. First, compared to children learning spoken English (n=80) and adults (n=25), young ASL-learners (n=30) and adults (n= 16) delayed their gaze shifts away from a language source, were more accurate with these shifts, and produced a smaller proportion of random shifting behavior (see Fig. \@ref(speed-acc-trio-plot)). Next, English-speaking adults produced fewer random gaze shifts when processing dynamic displays of printed text compared to processing spoken language. Finally, 3-5 year-olds (n=39) and adults (n=31) delayed the timing of gaze shifts away from a speaker's face when processing speech in a noisy environment, which resulted in fewer random eye movements, and more accurate gaze shifts, despite the noisier processing context (see Fig. \@ref(speed-acc-noise-plot)).
 
-The majority of this work has used eye movements as a measure of the output of the underlying language comprehension process, often using linguistic stimuli that come from a disembodied voice. But in real world contexts, people also gather information about the linguistic signal by fixating on the language source. Consider a speaker who asks you to "Pass the salt" but you are in a noisy room, making it difficult to understand the request. Here, comprehension can be facilitated by gathering information via (a) fixations to the nonlinguistic visual world (i.e., encoding the objects that are present in the scene) or (b) fixations to the speaker (i.e., reading lips or perhaps the direction of gaze). But, this situation creates a tradeoff where the listener must decide what kind of information to gather and at what time. How do we decide where to look? We propose that people modulate their eye movements during language comprehension in response to tradeoffs in the value of gathering different kinds of information. 
+### Methods
 
-We test this adaptive tradeoff account using two case studies that manipulate the value of different fixation locations for language understanding: a) a comparison of processing sign vs. spoken language in children (E1), and b) a comparison of processing printed text vs. spoken language in adults (E2). Our key prediction is that competition for visual attention will make gaze shifts away from the language source less valuable than fixating the source of the linguistic signal, leading people to generate fewer exploratory, nonlanguage-driven eye movements.
+The design and procedure was parallel to the work on children's eye movements reviewed above. We compared the timing and accuracy of eye movements for children learning ASL to children learning a spoken language using parallel real-time language comprehension tasks where participants processed familiar sentences (e.g., "Where's the ball?") while looking at a simplified visual world with 3 fixation targets (a center stimulus that varied by condition, a target picture, and a distracter picture). In this work, we analyzed the timing and accuracy of children's initial gaze shifts after the onset of the target noun. The timescale of this analysis is milliseconds and focused on a single decision within a series of decisions about where to look during sentence processing. We made thie decision because first shifts provide a window onto changes in the underlying dynamics of how listeners integrate linguistic information in the unfolding word with the decision process that generates eye movements.
 
-```{r speed_acc_trio_plot}
-readPNG(here("/prior_work/figs_png/speed_acc_trio.png")) %>% grid.raster()
-```
-
-Some of our work has explored how the presence of another person changes the set of information seeking behaviors available [@macdonald2017info]. Inspired by theories of natural vision that characterize eye movements as an information seeking mechanism, we asked whether children and adults would allocate more visual attention to a speaker when the linguistic signal was noisy to support the goal of rapid language understanding. We used an eye-tracking task to measure participants' gaze patterns while they processed clear or degraded speech (speech with brown noise added). Both children and adults spent more time fixating on the speaker in the degraded speech context. Interestingly, children and adults were also more accurate in word recognition even though the speech was noisy and difficult to process. This result suggests that listeners were compensating for the uncertainty in the auditory channel by gathering visual information from the speaker. Critically, listeners would not have been able to gather this information if the speaker was not present (e.g., listening to a noisy recording) and in clear view.
+We predicted that, compared to spoken language processing, processing ASL would increase the value of fixating on the language source and decrease the value of generating exploratory, nonlanguage-driven shifts after the target linguistic item began unfolding in time. We also hypothesized that a noisy auditory environment would increase the value of fixating a speaker to gather visual information. Thus we predicted that adults and children in noisy contexts would delay generating an eye movement away from a speaker until they have accumulated additional visual information about the identity of the named referent. 
 
 ### Key takeway 
 
-We then compared the dynamics of eye movements during familiar ASL processing to those of spoken language learners, showing that ASL-learners gather more information about the linguistic signal before shifting away from a language source compared to spoken language learners. We proposed an information-seeking account to explain these modality-based differences and tested predictions of our account across a variety of language comprehension contexts. We found the same pattern of eye movements for English-speaking adults processing displays of printed text and for both children and adults processing speech in noisy auditory environments (Chapter 2). These results suggest that listeners flexibly adapt eye movements to the value of seeking higher value visual information to support their goal of rapid langauge comprehension.
+Taken together, these results provide evidence that young listeners, like adults, will adapt their gaze patterns to the demands of different processing environments by seeking out visual information from social partners to support language comprehension.
 
-```{r speed_acc_noise_plot, eval = F}
-readPNG(here("/prior_work/figs_png/speed_acc_noise.png")) %>% grid.raster()
+```{r speed-acc-noise-plot, fig.cap = "Timecourse looking and first shift Reaction Time (RT) and Accuracy results. Panel A shows the overall looking to the center, target, and distracter stimulus for each processing condition and age group. Panel B shows the distribution of RTs for each participant and the pairwise contrast between the noise and clear conditions. Panel C shows the same information but for first shift accuracy."}
+readPNG(here::here(fig_read_path, "speed_acc_noise.png")) %>% grid.raster()
 ```
 
+## Social cues to reference modulate adults attention and memory during cross-situational word learning {#ch3}
 
-## Chapter 3: Social cues to reference modulate attention and memory during cross-situational word learning {#ch3}
+
+```{r soc-xsit-stimuli, out.width="85%", fig.cap = "Exposure and test trials from Experiments 1-4. The top left panel shows an exposure trial in the No-gaze condition using the schematic gaze cue (Experiment 1). The top right panel shows an exposure trial in the Gaze condition using the video gaze cue (Experiments 2-4). Participants saw either Gaze or No-gaze exposure trials depending on condition assignment, and participants saw both types of test trials: Same (bottom left panel) and Switch (bottom right panel). On Same trials, the object that participants chose during exposure appeared with a new novel object. On Switch trials the object that participants did not choose appeared with a new novel object." }
+
+readPNG(here::here(fig_read_path, "soc_xsit_stimuli_new.png")) %>% grid.raster()
+```
 
 ### Study overview
 
-Our prior work provides evidence that the social context can modulate the content of the learner's hypothesis space [@macdonald2017social]. Inspired by ideas from Social-pragmatic theories of language acquisition that emphasize the importance of social cues for word learning [@clark2009first; @hollich2000breaking; @bloom2002children], we showed adults a series of word learning contexts that varied in ambiguity depending on whether there was a useful social cue to reference available (a speaker's gaze). We then measured learners' memory for alternative word-object links. People flexibly responded to the amount of ambiguity in the input, and as uncertainty increased, they tended to store more word-object hypotheses. Moreover, we found that learners stored representations with different levels of fidelity as a function of the reliability of the social cue. When the speaker was a less reliable source of information, learners distributed attention and memory broadly, storing more hypotheses.
+```{r soc-xsit-plot, out.width="85%", fig.cap = "Panel A shows accuracy on Same and Switch test trials as a function of the interval between exposure and test trials. Panel B shows memory performance as a function of the reliability of the speaker's prior gaze cues. Error bars indicate 95\\% confidence intervals computed by non-parametric bootstrap."}
 
-These results provide evidence that the content of learners' hypothesis spaces changed as a function of social information. Further suppport for this idea comes from experimental work showing that even children as young as 16 months prefer to map novel words to objects that are the target of a speaker’s gaze and not their own [@baldwin1993infants], and analyses of naturalistic parent-child labeling events shows that young learners tended to retain labels accompanied by clear referential cues, which served to make a single object dominant in the visual field [@yu2012embodied]. One important direction for future research is to measure the full causal pathway from variation in social information through children's hypothesis spaces to their information seeking behaviors. For example, it would be interesting to know whether learners' subsequent questions or decisions about where to allocate attention would be affected by the social context in which they were first exposed to a new word.
+readPNG(here::here(fig_read_path, "soc_xsit.png")) %>% grid.raster()
+```
+
+Because children hear language in environments that contain many things to talk about, learning the meaning of even the simplest word requires making inferences under uncertainty. A cross- situational statistical learner can aggregate across naming events to form stable word-referent mappings, but this approach neglects an important source of information that can reduce referential uncertainty: social cues from speakers (e.g., eye gaze). In four large-scale experiments with adults, we tested the effects of varying referential uncertainty in cross-situational word learning using social cues. Social cues shifted learners away from tracking multiple hypotheses and towards storing only a single hypothesis (Experiments 1 and 2; Panel A of Fig. \@ref(fig:soc-xsit-plot)). In addition, learners were sensitive to graded changes in the strength of a social cue, and when it became less reliable, they were more likely to store multiple hypotheses (Experiment 3; Panel B of Fig. \@ref(fig:soc-xsit-plot)). Finally, learners stored fewer word-referent mappings in the presence of a social cue even when given the opportunity to visually inspect the objects for the same amount of time (Experiment 4). 
+
+### Method
+
+Experiments 1-4 followed a similar design and procedure. We posted a set of Human Intelligence Tasks (HITs) to Amazon Mechanical Turk. Adults saw a total of 16 trials: eight exposure trials and eight test trials. On each trial, they heard one novel word, saw a set of novel objects, and were asked to guess which object went with the word (see Fig. \@ref(soc-xsit-stimuli)). Before seeing exposure and test trials, participants completed four practice trials with familiar words and objects. These trials familiarized participants to the task and allowed us to exclude participants who were unlikely to perform the task as directed, either because of inattention or because their computer audio was turned off.
+
+After the practice trials, participants were told that they would now hear novel words and see novel objects and that their task was to select the referent that “goes with each word.” Over the course of the experiment, participants heard eight novel words two times, with one exposure trial and one test trial for each word. Four of the test trials were Same trials in which the object that participants selected on the exposure trial was shown with a set of new novel objects. The other four test trials were Switch trials in which one of the objects was chosen at random from the set of objects that the participant did not select on exposure.
+
+In Experiment 3, we modified the cross-situational learning paradigm to include a block of 16 familiarization trials (8 exposure trials and 8 test trials) at the beginning of the experiment. These trials served to establish the reliability of the speaker’s gaze. To establish reliability, we varied the proportion of Same/Switch trials that occurred during the familiarization block. Recall that on Switch trials the gaze target did not show up at test, which provided evidence that the speaker’s gaze was not a reliable cue to reference. Reliability was a between-subjects manipulation such that participants either saw 8, 6, 4, 2, or 0 Switch trials during familiarization, which created the 0%, 25%, 50%, 75%, and 100% reliability conditions. After the familiarization block, participants completed another block of 16 trials (8 exposure trials and 8 test trials).
 
 ### Key takeaway
 
-In a separate line of work, we have asked how the presence of a social cue to reference -- a speaker's gaze -- could change the representations that support novel word learning (Chapter 3). Our results suggest that word learneers stored representations with different levels of fidelity depending on the amount of ambiguity present during learning. In the absence of a referential cue to word meaning, learners tended to store more alternative word-object links. In contrast, when gaze was present learners stored less information, showing behavior consistent with tracking a single hypothesis. Thus, word learners flexibly respond to the amount of ambiguity in the input, and as referential uncertainty increases, they tend to store more information.
-
-```{r soc_xsit_plot, out.width="85%"}
-readPNG("../prior_work/figs_png/soc_xsit.png") %>% grid.raster()
-```
-
+Taken together, our data suggest that the representations underlying cross-situational word learning of concrete object labels are quite flexible: In conditions of greater uncertainty, learners store a broader range of information.
 
 # Proposed work {#proposal}
 
@@ -111,7 +129,7 @@ The goal of the proposed work is to understand how children use the presence of 
 
 ## Balancing looks to people and to objects during word learning
 
-This project aims to answer the following research questions:
+This study aims to answer the following research questions:
 
 How does access to social cues shape in-the-moment decisions about visual fixation? How do children balance looks to people and to objects over the course of learning a new concept? Do children use prior knowledge to select fixation behaviors that best support word learning? 
 
@@ -121,7 +139,6 @@ Framing fixation behaviors as a goal-based decision-making problem allows us to 
 
 A growing body of psychological research has used the OED framework as a metaphor for active learning. The idea is that when people make decisions, they engage in a similar process of evaluating the "usefulness" of different actions relative to their learning goals. And they select behaviors that maximize the potential for gaining information. A success of the OED account is that it can capture a wide range of information seeking behaviors, including verbal question asking [@ruggeri2015children], planning interventions in causal learning tasks [@cook2011science], and decisions about where to look during scene understanding [@najemnik2005optimal]. Figures 1 and 2 present schematic overviews of how OED principles could shape the learning process for two of these domains -- causal learning (Figure 1) and word learning (Figure 2).
 
-
 One compelling use case of OED metaphor as a model of human behavior comes from @nelson2005finding study of eye movements during novel concept learning. Their model combined Bayesian probabilistic learning, which represents current knowledge as a probability distribution over concepts, with an OED model that calculated the usefulness of different patterns of eye movements. Here, eye movements were modeled as a type of question-asking behavior that gathered visual information about the target concept. @nelson2005finding found that participants' eye movements aligned with predictions from the OED model. Specifically, participants changed the dynamics of eye movements depending on how well they learned the target concepts. Early in learning, when the concepts were unfamiliar, the model generated a broader, less efficient distribution of fixations to explore all candidate features that could be used to categorize the stimulus. However, after the model began to learn the target concepts, eye movement patterns shifted to become more efficient and focused on a single stimulus dimension to maximize accuracy. This shift from exploratory to efficient eye movements matched adult performance on the task, suggesting that people's behavior was sensible given the structure of the learning problem and the uncertainty in the context.
 
 The intuition is that people balance fixating a speaker and fixating objects to support concept learning. The question is whether models of Bayesian concept learning and Optimal Experiment Design (Neslon & Cottrell, 2007) provide a good explanation of children’s eye movements. How far can we get using a purely computational information seeking decision model? 
@@ -130,11 +147,16 @@ The intuition is that people balance fixating a speaker and fixating objects to 
 
 When gaze cued adults’ visual attention, they showed stronger memory for the word-object link compared to when a gaze cue was absent (Figure 2). This result suggest that social information does more than modulate how people allocate their visual attention (more than a filter); instead, social cues change the strength of the inference.
 
-```{r gaze_xsit_plot}
-readPNG("../prior_work/figs_png/gaze_xsit.png") %>% grid.raster()
+```{r gaze-xsit-plot, out.width = "75%", fig.cap = "Panel A shows adults' allocation of visual attention during learning trials. Panel B shows adults stronger memory for novel word-object links when their attention was cued by gaze compared to when a gaze cue was absent, even when they had fixated on the target objects for similar amounts of time during learning."}
+
+readPNG(here::here(fig_read_path, "gaze_xsit.png")) %>% grid.raster()
 ```
 
 ### Design
+
+```{r speed-acc-novel-stimuli, out.width = "75%", fig.cap = "Proposed stimuli information, including the trial structure, fixation targets in the visual world, and the gaze cue manipuulation."}
+readPNG(here::here(fig_read_path, "speed_acc_novel_stim.png")) %>% grid.raster()
+```
 
 ### Predictions
 
