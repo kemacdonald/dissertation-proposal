@@ -1,3 +1,22 @@
+KM DP scratch writing:
+
+
+  This study aims to answer the following research questions:
+    
+    How does access to social cues shape in-the-moment decisions about visual fixation? How do children balance looks to people and to objects over the course of learning a new concept? Do children use prior knowledge to select fixation behaviors that best support word learning? 
+    
+    The word learning context is an interesting case because learners are working towards multiple goals: comprehending speech in the moment (a dynamic intergration of linguistic and visual signal with prior knowledge) and figuring out what the new word refers to in the visual scene. Thus, eye movements during concept formation can be used to gather visual information from the speaker (e.g., eye gaze or mouth movements) or about the nonlinguistic visual world (encoding objects). How do we explain where children look as they acquire more information in-the-moment of language comprehension and as they build a learning history about the correct word-object mapping?  This question can be formalized as a sequential decision making problem where children make fixation choice based on (1) their knowledge of the target concept, (2) the value of fixating a speaker for linguistic processing, and (3) the cost of each eye movement. 
+  
+  Framing fixation behaviors as a goal-based decision-making problem allows us to connect to formal models of action selection developed to explain 
+  
+  A growing body of psychological research has used the OED framework as a metaphor for active learning. The idea is that when people make decisions, they engage in a similar process of evaluating the "usefulness" of different actions relative to their learning goals. And they select behaviors that maximize the potential for gaining information. A success of the OED account is that it can capture a wide range of information seeking behaviors, including verbal question asking [@ruggeri2015children], planning interventions in causal learning tasks [@cook2011science], and decisions about where to look during scene understanding [@najemnik2005optimal]. Figures 1 and 2 present schematic overviews of how OED principles could shape the learning process for two of these domains -- causal learning (Figure 1) and word learning (Figure 2).
+  
+  One compelling use case of OED metaphor as a model of human behavior comes from @nelson2005finding study of eye movements during novel concept learning. Their model combined Bayesian probabilistic learning, which represents current knowledge as a probability distribution over concepts, with an OED model that calculated the usefulness of different patterns of eye movements. Here, eye movements were modeled as a type of question-asking behavior that gathered visual information about the target concept. @nelson2005finding found that participants' eye movements aligned with predictions from the OED model. Specifically, participants changed the dynamics of eye movements depending on how well they learned the target concepts. Early in learning, when the concepts were unfamiliar, the model generated a broader, less efficient distribution of fixations to explore all candidate features that could be used to categorize the stimulus. However, after the model began to learn the target concepts, eye movement patterns shifted to become more efficient and focused on a single stimulus dimension to maximize accuracy. This shift from exploratory to efficient eye movements matched adult performance on the task, suggesting that people's behavior was sensible given the structure of the learning problem and the uncertainty in the context.
+  
+  The intuition is that people balance fixating a speaker and fixating objects to support concept learning. The question is whether models of Bayesian concept learning and Optimal Experiment Design (Neslon & Cottrell, 2007) provide a good explanation of children’s eye movements. How far can we get using a purely computational information seeking decision model? 
+    
+------------------------------------------------
+
 kim and rehder (2009): how knowledge affects attention during category learning
 
 	- But, contra these accounts, in Experiment 2 a preference to fixate related versus neutral features began to emerge in the second block of training; by the end of training, learners were over twice as likely to fixate related features as compared to neutral ones.
