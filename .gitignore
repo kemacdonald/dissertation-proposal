@@ -4,11 +4,10 @@
 .png
 .mov
 *cache/
-presentations/
+presentation/
 movies/
 summer_credit_pool_app/
 .Rproj.user
 packrat/lib*/
 experiments/
 .DS_store
-
